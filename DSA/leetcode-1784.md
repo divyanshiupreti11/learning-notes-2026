@@ -78,3 +78,19 @@ public:
     }
 };
 
+## ⏱️ Time Complexity
+
+**O(n)**
+
+We traverse the string once using a loop from index `1` to `n-1`.  
+Each iteration performs constant-time comparisons (`s[i]` and `s[i-1]`).  
+Therefore, the total time complexity is **linear in the length of the string**.
+
+---
+
+## 💾 Space Complexity
+
+**O(1)**
+
+We only use a few integer variables (`n`, `cnt`, `i`) and no extra data structures.  
+Hence the extra space required is **constant**.
