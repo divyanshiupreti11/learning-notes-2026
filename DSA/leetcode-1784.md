@@ -1,13 +1,16 @@
 # LeetCode 1784 - Check if Binary String Has at Most One Segment of Ones
 
-## Problem
+## 🔗 Problem Link
+https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/description/?envType=daily-question&envId=2026-03-06
+
+## 🧠 Problem Statement
 Given a binary string `s` containing only `0`s and `1`s, return **true** if the string contains **at most one contiguous segment of ones**. Otherwise, return **false**.
 
 A segment of ones means a continuous group of `1`s.
 
 ---
 
-## Examples
+## 📌 Examples
 
 ### Example 1
 Input:s = "1001"
@@ -23,7 +26,7 @@ Segments of `1`: [11]0
 
 There is **only one segment of ones**, so the answer is: true
 
-## Approach
+## 💡  Approach
 
 We count how many **segments of `1`** exist in the string.
 
@@ -33,7 +36,7 @@ previous character = '0'
 
 This indicates that a new group of `1`s has started.
 
-### Steps
+### 🚀 Steps
 
 1. Initialize `cnt = 0` to count segments.
 2. If the first character is `1`, increment `cnt`.
@@ -50,4 +53,6 @@ So valid cases are:
 
 Invalid cases:
 2 or more segments
+
+
 
