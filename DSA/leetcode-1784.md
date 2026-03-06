@@ -55,4 +55,26 @@ Invalid cases:
 2 or more segments
 
 
+---
+
+# 💻 C++ Implementation
+
+```cpp
+class Solution {
+public:
+    bool checkOnesSegment(string s) {
+        int n = s.size();
+        int cnt = 0;
+
+        if(s[0] == '1') cnt++;
+
+        for(int i = 1; i < n; i++){
+            if(s[i] == '1' && s[i-1] == '0'){
+                cnt++;
+            }
+        }
+
+        return cnt <= 1;
+    }
+};
 
