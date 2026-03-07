@@ -105,10 +105,10 @@ public:
     }
 };
 ```
-##Complexity Analysis
-###Time Complexity
+## Complexity Analysis
+### Time Complexity
 O(n)
 The sliding window iterates over 2n characters once.
-###Space Complexity
+### Space Complexity
 O(n)
 Two additional pattern strings are stored.
