@@ -1,6 +1,8 @@
 # Minimum Flips to Make Binary String Alternating
+## 🔗 problem link
+https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/description/?envType=daily-question&envId=2026-03-07
 
-## Problem Statement
+## 🔄 Problem Statement
 
 Given a binary string `s`, return the **minimum number of flips** required to make the string **alternating**.
 
@@ -27,7 +29,7 @@ We must compute the **minimum number of flips required for any rotation of the s
 
 ---
 
-# Key Idea
+## 💡 Key Idea
 
 Instead of explicitly generating all rotations, we use a common trick:
 s + s
@@ -45,9 +47,9 @@ The minimum mismatches with these patterns give the answer.
 
 ---
 
-# Approach 1: Using Explicit Alternating Strings
+# 🚀 Approach 1: Using Explicit Alternating Strings
 
-## Idea
+## 💡Idea
 
 1. Double the string (`s = s + s`) to simulate rotations.
 2. Generate two alternating pattern strings:
@@ -59,7 +61,7 @@ The minimum mismatches with these patterns give the answer.
 
 ---
 
-## Code
+## 💻 Code
 
 ```cpp
 class Solution {
@@ -105,7 +107,7 @@ public:
     }
 };
 ```
-## Complexity Analysis
+## ⏰ Complexity Analysis
 ### Time Complexity
 O(n)
 The sliding window iterates over 2n characters once.
