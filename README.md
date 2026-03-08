@@ -3,16 +3,18 @@
 <h1 align="center">🚀 Learning Notes 2026</h1>
 
 <p align="center">
-My journey of learning <b>DSA, Web Development, AI Integration and Full Stack Development</b>.
+My journey of learning <b>DSA, Web Development, AI Integration and Full Stack Development</b>
 </p>
 
 <p align="center">
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/divyanshiupreti11/learning-notes-2026)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/divyanshiupreti11/learning-notes-2026)
-![GitHub Stars](https://img.shields.io/github/stars/divyanshiupreti11/learning-notes-2026?style=social)
+![Repo Size](https://img.shields.io/github/repo-size/divyanshiupreti11/learning-notes-2026)
+![Last Commit](https://img.shields.io/github/last-commit/divyanshiupreti11/learning-notes-2026)
+![Stars](https://img.shields.io/github/stars/divyanshiupreti11/learning-notes-2026?style=social)
 
 </p>
+
+---
 
 ---
 
