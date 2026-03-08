@@ -16,8 +16,6 @@ My journey of learning <b>DSA, Web Development, AI Integration and Full Stack De
 
 ---
 
----
-
 # 📚 About This Repository
 
 This repository documents my **learning journey throughout 2026**.
