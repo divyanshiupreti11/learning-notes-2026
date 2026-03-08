@@ -1,5 +1,7 @@
 
 # 🔢 Find Unique Binary String (LeetCode 1980)
+# 🔗 Problem Link
+https://leetcode.com/problems/find-unique-binary-string/description/?envType=daily-question&envId=2026-03-08
 
 ## 📌 Problem Statement
 
