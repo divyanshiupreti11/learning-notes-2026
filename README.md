@@ -1,35 +1,49 @@
-# 🚀 Learning Notes 2026
+<!-- HEADER BANNER -->
 
-![GitHub repo size](https://img.shields.io/github/repo-size/divyanshiupreti11/learning-notes-2026)
-![GitHub last commit](https://img.shields.io/github/last-commit/divyanshiupreti11/learning-notes-2026)
-![GitHub stars](https://img.shields.io/github/stars/divyanshiupreti11/learning-notes-2026?style=social)
-![GitHub forks](https://img.shields.io/github/forks/divyanshiupreti11/learning-notes-2026?style=social)
+<h1 align="center">🚀 Learning Notes 2026</h1>
 
-Welcome to my **Learning Notes Repository** 📚
+<p align="center">
+My journey of learning <b>DSA, Web Development, AI Integration and Full Stack Development</b>.
+</p>
 
-This repository documents my **learning journey throughout 2026** where I explore and practice:
+<p align="center">
 
-- 📊 Data Structures & Algorithms  
-- 🌐 Web Development (Frontend + Backend)  
-- 🤖 AI Integration in Applications  
-- 💻 Full Stack Projects  
-- 📚 Core Computer Science Concepts  
+![GitHub Repo Size](https://img.shields.io/github/repo-size/divyanshiupreti11/learning-notes-2026)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/divyanshiupreti11/learning-notes-2026)
+![GitHub Stars](https://img.shields.io/github/stars/divyanshiupreti11/learning-notes-2026?style=social)
 
-The goal of this repository is to **learn in public, stay consistent, and build a strong technical foundation.**
+</p>
+
+---
+
+# 📚 About This Repository
+
+This repository documents my **learning journey throughout 2026**.
+
+It contains:
+
+- 📊 Data Structures & Algorithms notes
+- 🌐 Web Development (Frontend + Backend)
+- 🤖 AI Integration
+- 💻 Full Stack Projects
+- 📚 Project documentation
+
+The goal is to **learn in public and build strong technical skills**.
 
 ---
 
 # 🎯 Goals for 2026
 
-- Solve **300+ Data Structures & Algorithms problems**
-- Build **full stack web applications**
-- Learn **AI integration in real-world projects**
-- Maintain **structured technical notes**
-- Document all **projects and implementations**
+- Solve **300+ DSA problems**
+- Build **full stack projects**
+- Integrate **AI into applications**
+- Document **all projects and learnings**
+- Maintain **consistent GitHub activity**
 
 ---
 
 # 📂 Repository Structure
+```
 learning-notes-2026
 │
 ├── DSA
@@ -39,8 +53,7 @@ learning-notes-2026
 │ ├── Binary Search
 │ ├── Trees
 │ ├── Graphs
-│ ├── Dynamic Programming
-│ └── Greedy
+│ └── Dynamic Programming
 │
 ├── Web-Development
 │ ├── Frontend
@@ -53,21 +66,20 @@ learning-notes-2026
 │ └── AI Features
 │
 ├── Projects
-│ ├── Project Documentation
-│ └── Implementation Notes
+│ └── Project Documentation
 │
 └── README.md
+```
 
 ---
 
-# 📊 Data Structures & Algorithms
+# 🧠 Data Structures & Algorithms
 
 Topics covered:
 
 - Arrays
 - Strings
 - Hashing
-- Linked List
 - Stack & Queue
 - Trees
 - Graphs
@@ -76,48 +88,34 @@ Topics covered:
 
 Each problem includes:
 
-- Problem explanation  
-- Approach  
-- Code implementation  
-- Complexity analysis  
+- Explanation
+- Approach
+- Code
+- Complexity Analysis
 
 ---
 
 # 🌐 Web Development
 
-## Frontend
-
-Technologies and topics:
+### Frontend
 
 - HTML
 - CSS
 - JavaScript
 - React
 - Responsive Design
-- UI/UX basics
 
----
-
-## Backend
-
-Backend technologies I am learning:
+### Backend
 
 - Node.js
 - Express.js
 - REST APIs
 - Authentication
-- Database integration
+- Database Integration
 
----
-
-## Full Stack Development
-
-Combining frontend and backend to build complete applications.
-
-Key focus areas:
+### Full Stack
 
 - API integration
-- Authentication systems
 - Real-time applications
 - Deployment
 
@@ -125,57 +123,24 @@ Key focus areas:
 
 # 🤖 AI Integration
 
-Learning how to integrate **AI into applications**.
+Exploring how to integrate **AI into applications**.
 
-Examples include:
+Examples:
 
 - AI APIs
-- AI-powered assistants
-- Voice-based interfaces
-- Intelligent application features
-
-Goal: build **AI-enabled full stack projects**.
+- AI assistants
+- Voice agents
+- AI-powered features
 
 ---
 
-# 🛠 Project Documentation
+# 🛠 Tech Stack
 
-This repository will also include **documentation for the projects I build**.
+<p>
 
-Each project will include:
+<img src="https://skillicons.dev/icons?i=cpp,js,html,css,react,nodejs,git,github,vscode"/>
 
-- Project overview
-- Features
-- Technologies used
-- Implementation details
-- Architecture explanation
-- Screenshots (if needed)
-
----
-
-# 💻 Tech Stack
-
-### Languages
-
-- C++
-- JavaScript
-
-### Frontend
-
-- HTML
-- CSS
-- React
-
-### Backend
-
-- Node.js
-- Express
-
-### Tools
-
-- Git
-- GitHub
-- VS Code
+</p>
 
 ---
 
@@ -183,23 +148,10 @@ Each project will include:
 
 | Area | Status |
 |-----|-----|
-| Data Structures & Algorithms | 🚧 In Progress |
+| DSA | 🚧 In Progress |
 | Web Development | 🚧 In Progress |
 | AI Integration | 🚧 In Progress |
 | Projects | 🚧 In Progress |
-
----
-
-# 📅 Learning Philosophy
-
-> *Consistency beats intensity.*
-
-I focus on:
-
-- Learning concepts deeply  
-- Practicing regularly  
-- Building real projects  
-- Documenting everything clearly  
 
 ---
 
@@ -209,19 +161,46 @@ I focus on:
 
 ---
 
+# 🔥 Most Used Languages
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=divyanshiupreti11&layout=compact&theme=tokyonight)
+
+---
+
+# 🐍 Contribution Snake
+
+Add this animation to visualize contributions.
+
+After enabling GitHub action it will show automatically.
+
+---
+
+# 📅 Learning Philosophy
+
+> Consistency beats intensity.
+
+Focus areas:
+
+- Deep understanding
+- Regular practice
+- Building projects
+- Documenting learnings
+
+---
+
 # ⭐ Support
 
-If you find this repository helpful, consider **starring it**.
+If you like this repository, please **give it a star ⭐**.
 
-It motivates me to continue documenting my learning journey.
+It motivates me to keep learning and documenting.
 
 ---
 
 # 📬 Connect With Me
 
-GitHub:  
+GitHub  
 https://github.com/divyanshiupreti11
 
 ---
 
-⭐ *Learning in public — building skills one concept at a time.*
+⭐ Learning in public — building skills step by step.
