@@ -67,3 +67,51 @@ This string differs from:
 011 → different at index 1
 001 → different at index 2
 
+So `"000"` **cannot be present in nums**.
+
+---
+
+# 🚀 Algorithm
+
+1. Let `n = nums.size()`
+2. Create an empty string `result`
+3. Iterate from `0 → n-1`
+4. Take the character `nums[i][i]`
+5. Flip the bit:
+   - `'0' → '1'`
+   - `'1' → '0'`
+6. Append it to the result
+7. Return the result
+
+---
+
+# 💻 C++ Implementation
+
+```cpp
+class Solution {
+public:
+    string findDifferentBinaryString(vector<string>& nums) {
+
+        int n = nums.size();
+        string result;
+
+        for(int i = 0; i < n; i++){
+            char ch = nums[i][i];
+
+            result += (ch == '0') ? '1' : '0';
+        }
+
+        return result;
+    }
+};
+```
+## ⏱ Complexity Analysis
+### Time Complexity
+O(n)
+
+We traverse the list once.
+
+### Space Complexity
+O(n)
+
+We create a new binary string of length n.
