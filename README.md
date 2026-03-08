@@ -174,6 +174,9 @@ Add this animation to visualize contributions.
 After enabling GitHub action it will show automatically.
 
 ---
+## 🐍 Contribution Snake
+
+![snake gif](https://github.com/divyanshiupreti11/divyanshiupreti11/blob/output/github-contribution-grid-snake.svg)
 
 # 📅 Learning Philosophy
 
