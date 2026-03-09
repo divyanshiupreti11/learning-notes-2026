@@ -1,4 +1,6 @@
 # 🔄 Number of Stable Arrays
+# 🔗 Problem Link
+https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/description/?envType=daily-question&envId=2026-03-09
 
 ## 📌 Problem Statement
 
