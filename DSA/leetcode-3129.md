@@ -1,4 +1,4 @@
-# 🔄 Number of Stable Arrays
+# 🔄  Find All Possible Stable Binary Arrays I
 # 🔗 Problem Link
 https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/description/?envType=daily-question&envId=2026-03-09
 
