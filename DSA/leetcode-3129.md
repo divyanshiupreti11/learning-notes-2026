@@ -1,6 +1,6 @@
-# Number of Stable Arrays
+# 🔄 Number of Stable Arrays
 
-## Problem Statement
+## 📌 Problem Statement
 
 You are given three integers:
 
@@ -16,7 +16,7 @@ Since the number of possible arrays can be very large, return the result **modul
 
 ---
 
-## Intuition
+## 🧠 Intuition
 
 A brute-force approach would attempt to generate all possible arrays containing `zero` zeros and `one` ones. However, the number of such arrays grows exponentially and becomes computationally infeasible.
 
@@ -30,7 +30,7 @@ Tracking the last element ensures that the **consecutive limit constraint** is n
 
 ---
 
-## Dynamic Programming Approach
+## 📝 Dynamic Programming Approach
 
 We maintain a **3-dimensional DP table**:
 dp[ones][zeros][last]
@@ -44,7 +44,7 @@ dp[ones][zeros][last]
 
 ---
 
-## Transition
+## 📊 Transition
 
 ### Case 1: Last element is `1`
 
@@ -93,7 +93,7 @@ The result is returned modulo \(10^9 + 7\).
 
 ---
 
-## C++ Implementation
+## 💻 C++ Implementation
 
 ```cpp
 class Solution {
@@ -139,7 +139,7 @@ public:
 };
 ```
 
-## Complexity Analysis
+## ⏰ Complexity Analysis
 
 ### Time Complexity
 
