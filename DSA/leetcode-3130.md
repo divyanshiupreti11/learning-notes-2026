@@ -156,5 +156,26 @@ public:
         return (t[zero][one][0] + t[zero][one][1]) % M;
     }
 };
-```
+
+## ⏱️ Complexity Analysis
+
+| Complexity | Value |
+|------------|-------|
+| **Time Complexity** | `O(zero × one)` |
+| **Space Complexity** | `O(zero × one)` |
+
+### Explanation
+
+- The solution uses a **3D Dynamic Programming table** `t[i][j][k]` where:
+  - `i` represents the number of `0`s used.
+  - `j` represents the number of `1`s used.
+  - `k` represents the last placed element (`0` or `1`).
+
+- The DP table size is `(zero + 1) × (one + 1) × 2`.
+
+- We iterate through all possible combinations of `i` and `j`, which results in **`zero × one` states**.
+
+- Each state is computed in **constant time `O(1)`**, so the overall **time complexity becomes `O(zero × one)`**.
+
+- Since we store results for all these states in the DP table, the **space complexity is also `O(zero × one)`**.
 
