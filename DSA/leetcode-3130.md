@@ -6,6 +6,8 @@
 ![Status](https://img.shields.io/badge/Status-Solved-success)
 
 ---
+## 🔗 Problem link
+https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/
 
 ## 📌 Problem Statement
 
