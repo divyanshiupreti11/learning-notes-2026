@@ -75,3 +75,15 @@ public:
         return n ^ mask;
     }
 };
+```
+## ⏱️ Complexity Analysis
+
+### Time Complexity: **O(log n)**
+
+**Reason:** The loop runs once for each bit of `n`, and the number of bits in an integer `n` is **log₂(n)**.
+
+---
+
+### Space Complexity: **O(1)**
+
+**Reason:** Only constant extra variables (`mask`, `temp`) are used regardless of input size.
