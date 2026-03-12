@@ -213,3 +213,37 @@ public:
 ```
 
 ---
+
+# ⏱ Time Complexity
+
+```
+O(E log E)
+```
+
+Where:
+
+- `E` = number of edges
+
+Breakdown:
+
+| Operation | Complexity |
+|----------|------------|
+Sorting edges | O(E log E) |
+DSU operations | O(α(n)) |
+Priority Queue | O(E log E) |
+
+---
+
+# 💾 Space Complexity
+
+```
+O(N + E)
+```
+
+Used for:
+
+- DSU arrays
+- edge storage
+- priority queue
+
+---
