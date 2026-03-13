@@ -131,6 +131,7 @@ typedef long long ll;
     }
 };
 ```
+---
 ### ⏱️ Time Complexity
 
 Binary Search runs on the time range.
