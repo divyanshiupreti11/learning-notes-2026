@@ -128,3 +128,23 @@ typedef long long ll;
         return result;
     }
 };
+```
+## ⏱️ Time Complexity
+
+Binary Search runs on the time range.
+
+Each check iterates through all workers.
+
+**Overall Time Complexity**
+O(n log(max(workerTimes) × mountainHeight²))
+
+
+Where:
+- `n` = number of workers
+
+---
+
+## 🧠 Space Complexity
+
+
+O(1)
