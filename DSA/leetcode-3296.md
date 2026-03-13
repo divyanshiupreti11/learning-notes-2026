@@ -1,4 +1,6 @@
 # ⛰️ Minimum Number of Seconds to Make Mountain Height Zero
+## 🔗 Problem Link
+https://leetcode.com/problems/minimum-number-of-seconds-to-make-mountain-height-zero/description/?envType=daily-question&envId=2026-03-13
 
 ## 🧩 Problem
 You are given:
@@ -140,7 +142,7 @@ O(n log(max(workerTimes) × mountainHeight²))
 Where:
 - `n` = number of workers
 
----
+
 
 ### 🧠 Space Complexity
 
