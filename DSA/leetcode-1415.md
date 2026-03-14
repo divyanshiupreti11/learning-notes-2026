@@ -1,4 +1,6 @@
 # 🧩 LeetCode 1415 - The k-th Lexicographical Happy String of Length n
+# 🔗 Problem Link
+https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/?envType=daily-question&envId=2026-03-14
 
 ## 📌 Problem Overview
 A **happy string** is defined as a string that:
