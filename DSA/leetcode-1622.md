@@ -1,4 +1,6 @@
 # ✨ Fancy Sequence – Optimized Implementation 
+# 🔗 Problem Link
+https://leetcode.com/problems/fancy-sequence/description/?envType=daily-question&envId=2026-03-15
 
 Implementation of the **Fancy Sequence Data Structure** using **lazy linear transformation and modular arithmetic**.
 
