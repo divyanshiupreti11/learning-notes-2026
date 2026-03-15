@@ -150,3 +150,22 @@ public:
 - Linear Transformation
 
 ---
+---
+
+# 💾 Space Complexity
+
+| Component | Space Used |
+|----------|-----------|
+| Sequence Storage (`seq`) | O(n) |
+| Variables (`add`, `mult`, `MOD`) | O(1) |
+| Recursion Stack (power function) | O(log MOD) |
+
+### Total Space Complexity
+
+```
+O(n)
+```
+
+Where:
+
+- `n` = number of elements appended to the sequence.
