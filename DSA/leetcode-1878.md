@@ -102,6 +102,51 @@ public:
 ```
 
 ---
+# ⚙️ Time Complexity
+
+| Operation | Complexity |
+|----------|-----------|
+| Grid Traversal | O(n × m) |
+| Rhombus Expansion | O(min(n,m)) |
+| Border Traversal | O(len) |
+
+### Total Time Complexity
+
+```
+O(n * m * min(n,m)^2)
+```
+
+Where:
+
+- `n` = number of rows
+- `m` = number of columns
 
 ---
+
+# 💾 Space Complexity
+
+| Component | Space |
+|----------|-------|
+| Set storing unique sums | O(k) |
+| Result vector | O(3) |
+
+Where `k` is the number of unique rhombus sums.
+
+### Total Space Complexity
+
+```
+O(k)
+```
+
+---
+
+# 🚀 Key Concepts Used
+
+- Grid Traversal
+- Geometry-based iteration
+- Set for maintaining **unique sorted values**
+- Reverse iterator for **largest values**
+
+---
+
 
