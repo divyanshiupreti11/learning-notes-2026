@@ -1,5 +1,6 @@
 # 📌 Largest Submatrix With Rearrangements
 # 🔗 Problem Link
+https://leetcode.com/problems/largest-submatrix-with-rearrangements/?envType=daily-question&envId=2026-03-17
 
 ## 🧠 Problem Overview
 Given a binary matrix consisting of `0`s and `1`s, you are allowed to rearrange the columns of each row independently.  
