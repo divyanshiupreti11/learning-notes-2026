@@ -1,30 +1,41 @@
 # 📌 Largest Submatrix With Rearrangements
 
-## 🧠 Problem Summary
-Given a binary matrix (0s and 1s), you can rearrange the columns of each row in any order.  
-Return the area of the largest submatrix consisting only of 1s.
+## 🧠 Problem Overview
+Given a binary matrix consisting of `0`s and `1`s, you are allowed to rearrange the columns of each row independently.  
+
+The objective is to determine the **maximum area of a submatrix** that contains only `1`s after optimal column rearrangements.
 
 ---
 
 ## 🚀 Approach
 
-### Step 1: Build Heights (Histogram Concept)
-Har cell ko upar ke consecutive 1s ka count bana dete hain.  
-Agar matrix[i][j] == 1 hai:
-matrix[i][j] += matrix[i-1][j]
+### 1. Build Heights (Histogram Concept)
+Convert the matrix into a height matrix where each cell represents the number of consecutive `1`s above it (including itself).
+
+- If `matrix[i][j] == 1`, then:
+  ```
+  matrix[i][j] += matrix[i - 1][j]
+  ```
+
+This step transforms each row into a histogram.
 
 ---
 
-### Step 2: Sort Each Row (Descending)
-Har row ko descending order me sort karte hain  
-Kyuki columns rearrange kar sakte hain → best width banani hai
+### 2. Sort Each Row (Descending Order)
+Since column rearrangement is allowed, sort each row in **non-increasing (descending) order**.
+
+- This helps in maximizing the width for larger heights.
 
 ---
 
-### Step 3: Calculate Area
-Har row ke liye:
-area = matrix[i][j] * (j + 1)
+### 3. Compute Maximum Area
+For each row:
+- Treat the sorted row as histogram heights
+- Compute area using:
+  ```
+  area = height × width = matrix[i][j] × (j + 1)
+  ```
 
-Maximum area store karte hain
+Track the maximum area across all rows.
 
 ---
