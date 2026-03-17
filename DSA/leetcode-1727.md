@@ -72,5 +72,51 @@ public:
     }
 };
 ```
+---
+## 📊 Example
+
+### Input
+```
+matrix = [
+  [0, 0, 1],
+  [1, 1, 1],
+  [1, 0, 1]
+]
+```
+
+### Height Matrix
+```
+[
+  [0, 0, 1],
+  [1, 1, 2],
+  [2, 0, 3]
+]
+```
+
+### After Sorting Rows
+```
+[
+  [1, 0, 0],
+  [2, 1, 1],
+  [3, 2, 0]
+]
+```
+
+### Output
+```
+Maximum Area = 4
+```
 
 ---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(m × n log n)`  
+  (Sorting each row)
+
+- **Space Complexity:** `O(1)`  
+  (In-place transformation)
+
+---
+---
+
