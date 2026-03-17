@@ -39,3 +39,38 @@ For each row:
 Track the maximum area across all rows.
 
 ---
+## 💻 Implementation
+
+```cpp
+class Solution {
+public:
+    int largestSubmatrix(vector<vector<int>>& matrix) {
+        int m = matrix.size(), n = matrix[0].size();
+        int maxArea = 0;
+
+        // Step 1: Build height matrix
+        for (int i = 1; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (matrix[i][j] == 1) {
+                    matrix[i][j] += matrix[i - 1][j];
+                }
+            }
+        }
+
+        // Step 2 & 3: Sort rows and compute max area
+        for (int i = 0; i < m; i++) {
+            sort(matrix[i].rbegin(), matrix[i].rend());
+
+            for (int j = 0; j < n; j++) {
+                int height = matrix[i][j];
+                int width = j + 1;
+                maxArea = max(maxArea, height * width);
+            }
+        }
+
+        return maxArea;
+    }
+};
+```
+
+---
