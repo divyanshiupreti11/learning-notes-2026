@@ -1,4 +1,5 @@
 # 📌 Largest Submatrix With Rearrangements
+# 🔗 Problem Link
 
 ## 🧠 Problem Overview
 Given a binary matrix consisting of `0`s and `1`s, you are allowed to rearrange the columns of each row independently.  
@@ -118,5 +119,8 @@ Maximum Area = 4
   (In-place transformation)
 
 ---
----
+## 🎯 Key Insight
 
+- By converting rows into histograms and leveraging column rearrangement,
+  we can greedily maximize the width for larger heights.
+- Sorting enables optimal pairing of height and width.
