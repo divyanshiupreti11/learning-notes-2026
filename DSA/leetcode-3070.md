@@ -62,4 +62,44 @@ public:
 ```
 
 ---
+## 📊 Example
 
+### Input
+```
+grid = [
+  [1, 2],
+  [3, 4]
+], k = 7
+```
+
+### Prefix Sum Matrix
+```
+[
+  [0, 0, 0],
+  [0, 1, 3],
+  [0, 4, 10]
+]
+```
+
+### Valid Submatrices (Top-left based)
+- (0,0) → sum = 1 ✅  
+- (0,1) → sum = 3 ✅  
+- (1,0) → sum = 4 ✅  
+- (1,1) → sum = 10 ❌  
+
+### Output
+```
+Count = 3
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(m × n)`  
+  (Single pass through the matrix)
+
+- **Space Complexity:** `O(m × n)`  
+  (Prefix sum matrix)
+
+---
