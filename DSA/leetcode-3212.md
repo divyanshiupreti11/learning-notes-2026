@@ -1,4 +1,6 @@
 # 📌 Number of Submatrices With Equal X and Y
+# 🔗 Problem link 
+https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/description/?envType=daily-question&envId=2026-03-19
 
 ## 🧠 Problem Overview
 Given a 2D grid consisting of characters `'X'` and `'Y'`, determine the number of submatrices (from the top-left corner `(0,0)` to `(i,j)`) such that:
