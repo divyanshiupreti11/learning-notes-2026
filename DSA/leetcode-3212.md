@@ -1,4 +1,3 @@
-
 # 📌 Number of Submatrices With Equal X and Y
 
 ## 🧠 Problem Overview
