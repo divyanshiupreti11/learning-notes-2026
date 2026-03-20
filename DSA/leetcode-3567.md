@@ -83,3 +83,69 @@ public:
 ```
 
 ---
+
+## 📊 Example
+
+### Input
+```
+grid = [
+  [1, 3, 6],
+  [7, 9, 2],
+  [4, 8, 5]
+], k = 2
+```
+
+### Submatrices & Results
+
+Submatrix (0,0):
+```
+[1, 3]
+[7, 9]
+→ values = {1,3,7,9}
+→ min diff = 2
+```
+
+Submatrix (0,1):
+```
+[3, 6]
+[9, 2]
+→ values = {2,3,6,9}
+→ min diff = 1
+```
+
+Submatrix (1,0):
+```
+[7, 9]
+[4, 8]
+→ values = {4,7,8,9}
+→ min diff = 1
+```
+
+Submatrix (1,1):
+```
+[9, 2]
+[8, 5]
+→ values = {2,5,8,9}
+→ min diff = 1
+```
+
+### Output
+```
+[
+  [2, 1],
+  [1, 1]
+]
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:**  
+  `O((m - k + 1) × (n - k + 1) × k² log(k²))`  
+  (Each submatrix uses a set for sorting)
+
+- **Space Complexity:**  
+  `O(k²)` per submatrix
+
+---
