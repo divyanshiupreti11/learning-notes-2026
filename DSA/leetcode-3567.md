@@ -1,4 +1,6 @@
 # 📌 Minimum Absolute Difference in K×K Submatrices
+# 🔗 Problem Link
+https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/description/?envType=daily-question&envId=2026-03-20
 
 ## 🧠 Problem Overview
 Given a 2D integer grid and an integer `k`, compute a matrix `result` such that:
