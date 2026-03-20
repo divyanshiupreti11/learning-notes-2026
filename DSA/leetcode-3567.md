@@ -31,3 +31,55 @@ Given a 2D integer grid and an integer `k`, compute a matrix `result` such that:
   - Traverse the sorted set
   - Compute differences between **adjacent elements**
   - Track the minimum difference
+    ---
+
+## 💻 Implementation
+
+```cpp
+class Solution {
+public:
+    vector<vector<int>> minAbsDiff(vector<vector<int>>& grid, int k) {
+        int m = grid.size();
+        int n = grid[0].size();
+
+        vector<vector<int>> result(m - k + 1, vector<int>(n - k + 1));
+
+        for (int i = 0; i <= m - k; i++) {
+            for (int j = 0; j <= n - k; j++) {
+
+                set<int> values;
+
+                // Collect elements of k x k submatrix
+                for (int r = i; r < i + k; r++) {
+                    for (int c = j; c < j + k; c++) {
+                        values.insert(grid[r][c]);
+                    }
+                }
+
+                // If all elements are same
+                if (values.size() == 1) {
+                    result[i][j] = 0;
+                    continue;
+                }
+
+                int minDiff = INT_MAX;
+
+                auto prev = values.begin();
+                auto curr = next(prev);
+
+                while (curr != values.end()) {
+                    minDiff = min(minDiff, *curr - *prev);
+                    prev = curr;
+                    curr++;
+                }
+
+                result[i][j] = minDiff;
+            }
+        }
+
+        return result;
+    }
+};
+```
+
+---
