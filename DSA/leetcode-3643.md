@@ -56,4 +56,46 @@ public:
 ```
 
 ---
+## 📊 Example
 
+### Input
+```
+grid = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+], x = 0, y = 0, k = 2
+```
+
+### Submatrix (before)
+```
+[1, 2]
+[4, 5]
+```
+
+### After Vertical Flip
+```
+[4, 5]
+[1, 2]
+```
+
+### Output
+```
+[
+  [4, 5, 3],
+  [1, 2, 6],
+  [7, 8, 9]
+]
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(k²)`  
+  (Processing all elements of the submatrix)
+
+- **Space Complexity:** `O(1)`  
+  (In-place modification)
+
+---
