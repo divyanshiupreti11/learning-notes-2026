@@ -1,6 +1,7 @@
 # Determine Whether Matrix Can Be Obtained By Rotation
 
-
+## 🔗 Problem Link
+https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/description/?envType=daily-question&envId=2026-03-22
 ## 🧠 Problem Overview
 Given two `n × n` binary matrices `mat` and `target`, determine whether `mat` can be transformed into `target` by rotating it in multiples of **90 degrees clockwise**.
 
