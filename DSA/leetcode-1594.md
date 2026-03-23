@@ -115,4 +115,36 @@ public:
 
 ---
 
+
+## 📊 Example
+
+### Input
+```
+grid = [
+  [1, -2, 1],
+  [1, -2, 1],
+  [3, -4, 1]
+]
+```
+
+### Explanation
+- Multiple paths exist with positive and negative products
+- The algorithm tracks both min and max products
+- Final maximum non-negative product is selected
+
+### Output
+```
+8
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(m × n)`  
+  (Each cell is computed once using memoization)
+
+- **Space Complexity:** `O(m × n)`  
+  (DP table for storing results)
+
 ---
