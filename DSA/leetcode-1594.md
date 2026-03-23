@@ -1,5 +1,6 @@
 #  📌 Maximum Non Negative Product in a Matrix
-
+## 🔗 Problem Link
+https://leetcode.com/problems/maximum-non-negative-product-in-a-matrix/description/?envType=daily-question&envId=2026-03-23
 ## 🧠 Problem Overview
 Given a 2D grid of integers (which may include positive, negative, and zero values), find the **maximum non-negative product** of a path from the **top-left corner `(0,0)` to the bottom-right corner `(m-1,n-1)`**.
 
