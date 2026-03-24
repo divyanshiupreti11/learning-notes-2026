@@ -1,4 +1,6 @@
 # 📌  Construct Product Matrix
+## 🔗 Problem Link
+https://leetcode.com/problems/construct-product-matrix/description/?envType=daily-question&envId=2026-03-24
 ## 🧠 Problem Overview
 Given a 2D grid of integers, construct a matrix `p` such that:
 
