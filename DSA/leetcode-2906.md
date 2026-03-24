@@ -91,4 +91,45 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+grid = [
+  [1, 2],
+  [3, 4]
+]
+```
+
+### Total Product
+```
+1 × 2 × 3 × 4 = 24
+```
+
+### Output
+```
+[
+  [24 / 1, 24 / 2],
+  [24 / 3, 24 / 4]
+]
+=
+[
+  [24, 12],
+  [8, 6]
+]
+```
+
+(Note: Actual computation is done using prefix & suffix, not division)
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(n × m)`  
+  (Two passes over the grid)
+
+- **Space Complexity:** `O(n × m)`  
+  (Output matrix)
+
+---
 
