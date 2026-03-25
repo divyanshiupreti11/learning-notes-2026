@@ -90,4 +90,39 @@ public:
 };
 ```
 
+## 📊 Example
+
+### Input
+```
+grid = [
+  [1, 2, 3],
+  [3, 2, 1]
+]
+```
+
+### Total Sum
+```
+1 + 2 + 3 + 3 + 2 + 1 = 12
+target = 6
+```
+
+### Horizontal Check
+- Row 0 → sum = 6 ✅
+
+### Output
+```
+true
+```
+
 ---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(r × c)`  
+  (Single pass for sum + row/column traversal)
+
+- **Space Complexity:** `O(1)`  
+  (No extra space used)
+
+---
+
