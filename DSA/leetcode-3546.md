@@ -45,3 +45,49 @@ target = totalSum / 2
 - If at any point sum equals target → valid partition
 
 ---
+## 💻 Implementation
+
+```cpp
+class Solution {
+public:
+    static bool canPartitionGrid(vector<vector<int>>& grid) {
+
+        long long totalSum = 0;
+
+        // Step 1: Compute total sum
+        for (auto& row : grid) {
+            totalSum += accumulate(row.begin(), row.end(), 0LL);
+        }
+
+        // If sum is odd, cannot partition
+        if (totalSum & 1) return false;
+
+        long long target = totalSum / 2;
+
+        int rows = grid.size();
+        int cols = grid[0].size();
+
+        long long rowSum = 0;
+
+        // Step 2: Check horizontal partition
+        for (int i = 0; i < rows && rowSum < target; i++) {
+            rowSum += accumulate(grid[i].begin(), grid[i].end(), 0LL);
+        }
+
+        if (rowSum == target) return true;
+
+        long long colSum = 0;
+
+        // Step 3: Check vertical partition
+        for (int j = 0; j < cols && colSum < target; j++) {
+            for (int i = 0; i < rows; i++) {
+                colSum += grid[i][j];
+            }
+        }
+
+        return colSum == target;
+    }
+};
+```
+
+---
