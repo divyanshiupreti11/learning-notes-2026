@@ -1,4 +1,6 @@
 # 📌 Equal Sum Grid Partition II
+## 🔗 Problem Link
+https://leetcode.com/problems/equal-sum-grid-partition-ii/description/?envType=daily-question&envId=2026-03-26
 ## 🧠 Problem Overview
 Given a 2D grid of integers, determine whether it is possible to partition the grid into two parts such that:
 
