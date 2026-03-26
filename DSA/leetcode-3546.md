@@ -4,8 +4,8 @@ https://leetcode.com/problems/equal-sum-grid-partition-i/description/?envType=da
 ## 🧠 Problem Overview
 Given a 2D grid of integers, determine whether it is possible to partition the grid into two parts such that:
 
-- The **sum of elements in both parts is equal**
-- The partition can be made using:
+- Both parts have **equal sum**
+- The partition is done using:
   - A **horizontal cut** (between rows), or
   - A **vertical cut** (between columns)
 
@@ -15,9 +15,16 @@ Return `true` if such a partition exists, otherwise return `false`.
 
 ## 🚀 Approach
 
-### 🔹 Step 1: Compute Total Sum
-- Calculate the total sum of all elements in the grid
-- If the total sum is **odd**, equal partition is impossible
+### 🔹 Step 1: Compute Total Sum + Row/Column Sums
+- Traverse the grid once to compute:
+  - `totalSum` → sum of all elements
+  - `rowSum[i]` → sum of each row
+  - `colSum[j]` → sum of each column
+
+---
+
+### 🔹 Step 2: Check Feasibility
+- If total sum is **odd**, equal partition is impossible:
 
 ```
 if (totalSum % 2 != 0) → return false
@@ -25,91 +32,97 @@ if (totalSum % 2 != 0) → return false
 
 ---
 
-### 🔹 Step 2: Target Sum
-- The goal is to find a partition such that each part has:
+### 🔹 Step 3: Horizontal Partition (Row-wise)
+- Accumulate row sums from top to bottom
+- At each step:
 ```
-target = totalSum / 2
+upperSum == totalSum - upperSum
 ```
+- If true → valid horizontal cut exists
 
 ---
 
-### 🔹 Step 3: Check Horizontal Partition
-- Traverse rows from top to bottom
-- Keep adding row sums until:
-  - Either sum equals target → valid partition
-  - Or exceeds target → stop
+### 🔹 Step 4: Vertical Partition (Column-wise)
+- Accumulate column sums from left to right
+- At each step:
+```
+leftSum == totalSum - leftSum
+```
+- If true → valid vertical cut exists
 
 ---
 
-### 🔹 Step 4: Check Vertical Partition
-- Traverse columns from left to right
-- Accumulate column sums
-- If at any point sum equals target → valid partition
-
----
 ## 💻 Implementation
 
 ```cpp
 class Solution {
 public:
-    static bool canPartitionGrid(vector<vector<int>>& grid) {
+    typedef long long ll;
 
-        long long totalSum = 0;
+    bool canPartitionGrid(vector<vector<int>>& grid) {
+        int m = grid.size();
+        int n = grid[0].size();
 
-        // Step 1: Compute total sum
-        for (auto& row : grid) {
-            totalSum += accumulate(row.begin(), row.end(), 0LL);
-        }
+        vector<ll> rowSum(m, 0);
+        vector<ll> colSum(n, 0);
 
-        // If sum is odd, cannot partition
-        if (totalSum & 1) return false;
+        ll totalSum = 0;
 
-        long long target = totalSum / 2;
-
-        int rows = grid.size();
-        int cols = grid[0].size();
-
-        long long rowSum = 0;
-
-        // Step 2: Check horizontal partition
-        for (int i = 0; i < rows && rowSum < target; i++) {
-            rowSum += accumulate(grid[i].begin(), grid[i].end(), 0LL);
-        }
-
-        if (rowSum == target) return true;
-
-        long long colSum = 0;
-
-        // Step 3: Check vertical partition
-        for (int j = 0; j < cols && colSum < target; j++) {
-            for (int i = 0; i < rows; i++) {
-                colSum += grid[i][j];
+        // Step 1: Compute sums
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                totalSum += grid[i][j];
+                rowSum[i] += grid[i][j];
+                colSum[j] += grid[i][j];
             }
         }
 
-        return colSum == target;
+        // Step 2: Check if partition is possible
+        if (totalSum % 2 != 0) return false;
+
+        // Step 3: Horizontal partition
+        ll upperSum = 0;
+        for (int i = 0; i < m - 1; i++) {
+            upperSum += rowSum[i];
+            if (upperSum == totalSum - upperSum) {
+                return true;
+            }
+        }
+
+        // Step 4: Vertical partition
+        ll leftSum = 0;
+        for (int j = 0; j < n - 1; j++) {
+            leftSum += colSum[j];
+            if (leftSum == totalSum - leftSum) {
+                return true;
+            }
+        }
+
+        return false;
     }
 };
 ```
+
+---
 
 ## 📊 Example
 
 ### Input
 ```
 grid = [
-  [1, 2, 3],
-  [3, 2, 1]
+  [2, 1, 1],
+  [1, 1, 2]
 ]
 ```
 
 ### Total Sum
 ```
-1 + 2 + 3 + 3 + 2 + 1 = 12
-target = 6
+2 + 1 + 1 + 1 + 1 + 2 = 8
+target = 4
 ```
 
 ### Horizontal Check
-- Row 0 → sum = 6 ✅
+- Row 0 → sum = 4 ✅
 
 ### Output
 ```
@@ -120,11 +133,9 @@ true
 
 ## ⏱️ Complexity Analysis
 
-- **Time Complexity:** `O(r × c)`  
-  (Single pass for sum + row/column traversal)
+- **Time Complexity:** `O(m × n)`  
+  (Single traversal for sums + linear scan)
 
-- **Space Complexity:** `O(1)`  
-  (No extra space used)
-
----
+- **Space Complexity:** `O(m + n)`  
+  (Row and column sum arrays)
 
