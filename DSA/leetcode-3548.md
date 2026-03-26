@@ -143,3 +143,34 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+grid = [
+  [2, 1, 3],
+  [1, 2, 1]
+]
+```
+
+### Explanation
+- Total sum = 10
+- Try different cuts
+- If direct partition fails, check if removing one element balances the difference
+
+### Output
+```
+true / false (depending on configuration)
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(m × n)`  
+  (Each configuration is processed efficiently)
+
+- **Space Complexity:** `O(m × n)`  
+  (Set + transpose grid)
+
+---
