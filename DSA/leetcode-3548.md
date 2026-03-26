@@ -66,3 +66,80 @@ To handle all possible partitions:
 4. Reverse transposed grid → cover remaining cases  
 
 ---
+## 💻 Implementation
+
+```cpp
+class Solution {
+public:
+    typedef long long ll;
+
+    ll totalSum = 0;
+
+    bool checkHorCut(vector<vector<int>>& grid) {
+        int m = grid.size();
+        int n = grid[0].size();
+
+        unordered_set<ll> st;
+        ll top = 0;
+
+        for (int i = 0; i < m - 1; i++) {
+            for (int j = 0; j < n; j++) {
+                st.insert(grid[i][j]);
+                top += grid[i][j];
+            }
+
+            ll bottom = totalSum - top;
+            ll diff = top - bottom;
+
+            // Case 1: Equal partition
+            if (diff == 0) return true;
+
+            // Case 2: Edge removals
+            if (diff == (ll)grid[0][0]) return true;
+            if (diff == (ll)grid[0][n - 1]) return true;
+            if (diff == (ll)grid[i][0]) return true;
+
+            // Case 3: General removal
+            if (i > 0 && n > 1 && st.count(diff)) return true;
+        }
+
+        return false;
+    }
+
+    bool canPartitionGrid(vector<vector<int>>& grid) {
+        int m = grid.size();
+        int n = grid[0].size();
+
+        // Compute total sum
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                totalSum += grid[i][j];
+            }
+        }
+
+        // Check all configurations
+        if (checkHorCut(grid)) return true;
+
+        reverse(grid.begin(), grid.end());
+        if (checkHorCut(grid)) return true;
+        reverse(grid.begin(), grid.end());
+
+        // Transpose grid
+        vector<vector<int>> transposeGrid(n, vector<int>(m));
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                transposeGrid[j][i] = grid[i][j];
+            }
+        }
+
+        if (checkHorCut(transposeGrid)) return true;
+
+        reverse(transposeGrid.begin(), transposeGrid.end());
+        if (checkHorCut(transposeGrid)) return true;
+
+        return false;
+    }
+};
+```
+
+---
