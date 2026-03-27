@@ -1,4 +1,6 @@
 # 📌 Matrix Similarity After Cyclic Shifts
+## 🔗 Problem Link
+https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/description/?envType=daily-question&envId=2026-03-27
 ## 🧠 Problem Overview
 Given a 2D matrix `mat` and an integer `k`, determine whether the matrix remains **unchanged** after performing cyclic shifts on each row:
 
