@@ -84,3 +84,34 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+mat = [
+  [1, 2, 3],
+  [4, 5, 6]
+], k = 1
+```
+
+### After Shifts
+- Row 0 (even) → right shift → `[3, 1, 2]`
+- Row 1 (odd) → left shift → `[5, 6, 4]`
+
+### Comparison
+- New matrix ≠ original matrix ❌
+
+### Output
+```
+false
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(m × n)`  
+- **Space Complexity:** `O(1)`  
+  (No extra space used)
+
+---
