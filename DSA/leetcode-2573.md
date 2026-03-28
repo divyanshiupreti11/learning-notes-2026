@@ -134,3 +134,34 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+lcp = [
+  [3, 0, 1],
+  [0, 2, 0],
+  [1, 0, 1]
+]
+```
+
+### Output
+```
+"aba"
+```
+
+### Explanation
+- The constructed string satisfies all LCP constraints
+- Recomputed LCP matches the given matrix
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(n²)`  
+  (Construction + validation)
+
+- **Space Complexity:** `O(n²)`  
+  (LCP matrix storage)
+
+---
