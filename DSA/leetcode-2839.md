@@ -50,3 +50,49 @@ condition1 && condition2
 ```
 
 ---
+## 💻 Implementation
+
+```cpp
+class Solution {
+public:
+    bool canBeEqual(string s1, string s2) {
+        bool condition1 =
+            (s1[0] == s2[0] && s1[2] == s2[2]) ||
+            (s1[0] == s2[2] && s1[2] == s2[0]);
+
+        bool condition2 =
+            (s1[1] == s2[1] && s1[3] == s2[3]) ||
+            (s1[1] == s2[3] && s1[3] == s2[1]);
+
+        return condition1 && condition2;
+    }
+};
+```
+
+---
+
+## 📊 Example
+
+### Input
+```
+s1 = "abcd"
+s2 = "cdab"
+```
+
+### Explanation
+- Swap indices (0,2): `"abcd"` → `"cbad"`
+- Swap indices (1,3): `"cbad"` → `"cdab"`
+
+### Output
+```
+true
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(1)`  
+- **Space Complexity:** `O(1)`
+
+---
