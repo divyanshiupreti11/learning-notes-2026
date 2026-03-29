@@ -1,6 +1,6 @@
-
 # 📌 Check If Strings Can Be Made Equal
-
+# 🔗 Problem Link
+https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/description/?envType=daily-question&envId=2026-03-29
 ## 🧠 Problem Overview
 Given two strings `s1` and `s2` of length 4, determine whether `s1` can be made equal to `s2` using any number of swaps between:
 
