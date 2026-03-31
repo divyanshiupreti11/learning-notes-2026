@@ -161,3 +161,24 @@ The algorithm constructs a valid string satisfying all constraints.
 - **Space Complexity:** `O(n + m)`
 
 ---
+## 🎯 Key Insight
+
+- First satisfy all mandatory (`'T'`) constraints
+- Then carefully break forbidden (`'F'`) matches
+- Greedy + validation approach ensures correctness
+
+---
+
+## ⚠️ Edge Cases
+
+- Conflicting `'T'` constraints → impossible
+- No position available to modify for `'F'` → impossible
+- Overlapping substrings
+
+---
+
+## 💡 Summary
+
+> Apply 'T' → Fill Defaults → Break 'F' Matches → Return Result  
+
+---
