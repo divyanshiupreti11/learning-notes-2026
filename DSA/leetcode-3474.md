@@ -1,4 +1,6 @@
 # 📌 Lexicographically Smallest Generated String
+# 🔗 Problem Link
+https://leetcode.com/problems/lexicographically-smallest-generated-string/description/?envType=daily-question&envId=2026-03-31
 ## 🧠 Problem Overview
 You are given two strings:
 
