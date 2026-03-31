@@ -137,3 +137,27 @@ public:
 ```
 
 ---
+
+## 📊 Example
+
+### Input
+```
+str1 = "TFT"
+str2 = "ab"
+```
+
+### Explanation
+- At index 0 → must match `"ab"`
+- At index 1 → must NOT match `"ab"`
+- At index 2 → must match `"ab"`
+
+The algorithm constructs a valid string satisfying all constraints.
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(n × m)`  
+- **Space Complexity:** `O(n + m)`
+
+---
