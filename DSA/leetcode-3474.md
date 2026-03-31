@@ -1,0 +1,1 @@
+# 📌 Lexicographically Smallest Generated String
