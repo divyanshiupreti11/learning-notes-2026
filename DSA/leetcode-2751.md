@@ -121,3 +121,34 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+positions = [3,5,2,6]
+healths  = [10,10,15,12]
+directions = "RLRL"
+```
+
+### Explanation
+- Robots move and collide based on direction
+- Health decreases during collisions
+- Only strongest robots survive
+
+### Output
+```
+[14]
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(n log n)`  
+  (Sorting + linear traversal)
+
+- **Space Complexity:** `O(n)`  
+  (Stack + index array)
+
+---
+
