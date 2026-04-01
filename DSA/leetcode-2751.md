@@ -151,4 +151,16 @@ directions = "RLRL"
   (Stack + index array)
 
 ---
+## 🎯 Key Insight
 
+- Sort by position → simulate real movement
+- Stack tracks active right-moving robots
+- Left-moving robots trigger collisions
+
+---
+
+## ⚠️ Edge Cases
+
+- No collisions → all survive
+- Chain collisions
+- Equal health → both destroyed
