@@ -1,4 +1,6 @@
 # 📌 Robot Collisions
+## 🔗 Problem Link
+https://leetcode.com/problems/robot-collisions/description/?envType=daily-question&envId=2026-04-01
 ## 🧠 Problem Overview
 You are given:
 
