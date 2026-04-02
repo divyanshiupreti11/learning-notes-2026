@@ -1,4 +1,6 @@
 # 📌 Maximum Amount of Money Robot Can Earn
+## 🔗 Problem link
+https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/description/?envType=daily-question&envId=2026-04-02
 ## 🧠 Problem Overview
 You are given a 2D grid `coins` where:
 
