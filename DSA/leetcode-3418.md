@@ -176,3 +176,12 @@ Maximum sum path with optimal skips
 
 ---
 
+## 🎯 Key Insight
+
+- Negative values introduce decision-making
+- Track both:
+  - Current position
+  - Remaining skips
+- Classic **3D DP problem**
+
+---
