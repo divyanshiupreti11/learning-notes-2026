@@ -144,3 +144,35 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+coins = [
+  [1, -2, 3],
+  [4, -5, 6],
+  [7, 8, 9]
+]
+```
+
+### Explanation
+- You can skip up to 2 negative values
+- Best path avoids maximum loss
+
+### Output
+```
+Maximum sum path with optimal skips
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(m × n × k)`  
+  (Each state computed once)
+
+- **Space Complexity:** `O(m × n × k)`  
+  (3D DP array)
+
+---
+
