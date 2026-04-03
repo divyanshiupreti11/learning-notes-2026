@@ -108,13 +108,7 @@ max(leftTake, rightTake)
 
 ---
 
-## 🏷️ Tags
-- Dynamic Programming
-- Binary Search
-- Greedy
-- Sorting
-- Simulation
-- 
+
 ## 💻 Implementation
 
 ```cpp
