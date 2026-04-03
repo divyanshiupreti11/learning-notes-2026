@@ -223,3 +223,9 @@ walls    = [1, 3, 5, 7]
 - Single robot case
 
 ---
+## 🏷️ Tags
+- Dynamic Programming
+- Binary Search
+- Greedy
+- Sorting
+- Simulation
