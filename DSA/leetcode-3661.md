@@ -188,4 +188,44 @@ public:
 
 ---
 
+## 📊 Example
 
+### Input
+```
+robots   = [2, 6]
+distance = [2, 2]
+walls    = [1, 3, 5, 7]
+```
+
+### Explanation
+- Robot at 2 → range [1,4]
+- Robot at 6 → range [4,8]
+- Choose optimal directions to maximize wall destruction
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(n log n + n × log w)`  
+  - Sorting + binary search
+
+- **Space Complexity:** `O(n)`  
+  - DP table
+
+---
+
+## 🎯 Key Insight
+
+- Split problem into independent robot decisions
+- Use binary search for fast wall counting
+- DP ensures optimal global decision
+
+---
+
+## ⚠️ Edge Cases
+
+- Overlapping ranges between robots
+- No walls in range
+- Single robot case
+
+---
