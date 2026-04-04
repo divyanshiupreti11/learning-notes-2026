@@ -79,3 +79,40 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+encodedText = "ch   ie   pr"
+rows = 3
+```
+
+### Matrix Representation
+```
+c h    
+i e    
+p r    
+```
+
+### Diagonal Traversal
+```
+c → e → r  
+h →    
+i → p  
+```
+
+### Output
+```
+"cipher"
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** `O(n)`  
+- **Space Complexity:** `O(n)`  
+
+---
+
+---
