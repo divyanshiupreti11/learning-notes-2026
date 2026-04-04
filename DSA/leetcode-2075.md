@@ -49,3 +49,33 @@ index += (columns + 1)
 - Remove them
 
 ---
+## 💻 Implementation
+
+```cpp
+class Solution {
+public:
+    string decodeCiphertext(string encodedText, int rows) {
+        int length = encodedText.length();
+
+        int columns = length / rows;
+
+        string originalText;
+
+        // Traverse diagonally
+        for (int col = 0; col < columns; col++) {
+            for (int idx = col; idx < length; idx += (columns + 1)) {
+                originalText += encodedText[idx];
+            }
+        }
+
+        // Remove trailing spaces
+        while (!originalText.empty() && originalText.back() == ' ') {
+            originalText.pop_back();
+        }
+
+        return originalText;
+    }
+};
+```
+
+---
