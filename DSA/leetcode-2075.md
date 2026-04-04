@@ -115,4 +115,17 @@ i → p
 
 ---
 
+## 🎯 Key Insight
+
+- Diagonal traversal corresponds to index jump of `(columns + 1)`
+- No need to explicitly build the matrix
+
+---
+
+## ⚠️ Edge Cases
+
+- `rows = 1` → return original string
+- Empty string
+- Trailing spaces in encoded text
+
 ---
