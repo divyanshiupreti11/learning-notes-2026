@@ -91,3 +91,19 @@ true
 
 ---
 
+## 🎯 Key Insights
+
+- Only the final position matters, not the path
+- Equal number of opposite moves cancel each other:
+  - U cancels D
+  - L cancels R
+
+---
+
+## ⚠️ Edge Cases
+
+- Empty string → returns `true`
+- Only one direction → returns `false`
+- Large input size → handled efficiently in linear time
+
+---
