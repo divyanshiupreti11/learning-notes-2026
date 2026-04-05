@@ -62,3 +62,32 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+moves = "UDLR"
+```
+
+### Execution
+- U → (0,1)
+- D → (0,0)
+- L → (-1,0)
+- R → (0,0)
+
+### Output
+```
+true
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+| Type              | Complexity |
+|------------------|-----------|
+| Time Complexity  | O(n)      |
+| Space Complexity | O(1)      |
+
+---
+
