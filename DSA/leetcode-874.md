@@ -168,3 +168,32 @@ obstacles = []
 
 ---
 
+## ⏱️ Complexity Analysis
+
+| Type              | Complexity |
+|------------------|-----------|
+| Time Complexity  | O(n + k)  |
+| Space Complexity | O(k)      |
+
+Where:
+- `n` = number of commands  
+- `k` = number of obstacles  
+
+---
+
+## 🎯 Key Insights
+
+- Use **hashing** for constant-time obstacle lookup
+- Simulate movement step-by-step
+- Direction rotation is handled using vector transformation
+
+---
+
+## ⚠️ Edge Cases
+
+- No obstacles → free movement
+- Obstacles immediately in front
+- Large coordinates
+- Multiple turns without movement
+
+
