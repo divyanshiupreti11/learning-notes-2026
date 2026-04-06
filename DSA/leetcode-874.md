@@ -91,3 +91,80 @@ maxDistance = max(maxDistance, x² + y²)
 ```
 
 ---
+## 💻 Implementation
+
+```cpp
+class Solution {
+public:
+    int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {
+
+        unordered_set<string> st;
+
+        // Store obstacles
+        for (vector<int>& obs : obstacles) {
+            string key = to_string(obs[0]) + "_" + to_string(obs[1]);
+            st.insert(key);
+        }
+
+        int x = 0, y = 0;
+        int maxDist = 0;
+
+        // Initial direction: North
+        pair<int, int> dir = {0, 1};
+
+        for (int cmd : commands) {
+
+            if (cmd == -2) {
+                // Turn left
+                dir = {-dir.second, dir.first};
+            }
+            else if (cmd == -1) {
+                // Turn right
+                dir = {dir.second, -dir.first};
+            }
+            else {
+                // Move forward
+                for (int step = 0; step < cmd; step++) {
+                    int newX = x + dir.first;
+                    int newY = y + dir.second;
+
+                    string key = to_string(newX) + "_" + to_string(newY);
+
+                    // Stop if obstacle found
+                    if (st.count(key)) break;
+
+                    x = newX;
+                    y = newY;
+                }
+            }
+
+            maxDist = max(maxDist, x * x + y * y);
+        }
+
+        return maxDist;
+    }
+};
+```
+
+---
+
+## 📊 Example
+
+### Input
+```
+commands = [4, -1, 3]
+obstacles = []
+```
+
+### Execution
+- Move 4 steps north → (0,4)
+- Turn right → facing east
+- Move 3 steps → (3,4)
+
+### Output
+```
+25
+```
+
+---
+
