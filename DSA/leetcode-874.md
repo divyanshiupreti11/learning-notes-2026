@@ -39,3 +39,55 @@ distance = x² + y²
 
 ---
 
+## 🚀 Approach
+
+### 🔹 Step 1: Store Obstacles Efficiently
+- Use a hash set to store obstacle positions
+- Represent each position as a string:
+```
+"x_y"
+```
+
+---
+
+### 🔹 Step 2: Direction Handling
+
+We represent direction as a vector:
+```
+(0, 1) → North
+```
+
+#### Turning Logic:
+- Left turn:
+```
+(x, y) → (-y, x)
+```
+- Right turn:
+```
+(x, y) → (y, -x)
+```
+
+---
+
+### 🔹 Step 3: Process Commands
+
+For each command:
+
+#### ✅ Turn Commands
+- Update direction vector accordingly
+
+#### ✅ Move Commands
+- Move step-by-step
+- At each step:
+  - Check if next position is an obstacle
+  - If yes → stop movement
+
+---
+
+### 🔹 Step 4: Track Maximum Distance
+- After each command:
+```
+maxDistance = max(maxDistance, x² + y²)
+```
+
+---
