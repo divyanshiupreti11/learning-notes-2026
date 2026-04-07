@@ -123,3 +123,41 @@ public:
 
 ---
 
+## 📊 Example
+
+### Input
+```
+Robot robot = Robot(3, 2);
+robot.step(2);
+robot.getPos(); → [2, 0]
+robot.getDir(); → "East"
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+| Type              | Complexity |
+|------------------|-----------|
+| Initialization   | O(width + height) |
+| step()           | O(1) |
+| getPos()         | O(1) |
+| getDir()         | O(1) |
+
+---
+
+## 🎯 Key Insights
+
+- Precomputing the path avoids repeated simulation
+- Circular indexing simplifies movement
+- Direction is stored along with position
+
+---
+
+## ⚠️ Edge Cases
+
+- `width = 1` or `height = 1`
+- Multiple full cycles (`num > perimeter`)
+- No movement before calling `getDir()`
+
+---
