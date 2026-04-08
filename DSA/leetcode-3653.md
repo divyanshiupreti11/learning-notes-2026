@@ -123,3 +123,18 @@ Where:
 - `Q` = number of queries
 
 ---
+## 🎯 Key Insights
+
+- Each query updates only selected indices using step `k`
+- Modular multiplication prevents overflow
+- Final result uses bitwise XOR
+
+---
+
+## ⚠️ Edge Cases
+
+- `k = 1` → updates all elements in range
+- Large values → handled using modulo
+- Single element range (`l == r`)
+
+---
