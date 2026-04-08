@@ -138,3 +138,9 @@ Where:
 - Single element range (`l == r`)
 
 ---
+## 🏷️ Tags
+
+- Arrays
+- Simulation
+- Math
+- Bit Manipulation
