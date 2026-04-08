@@ -90,3 +90,36 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+nums = [1, 2, 3, 4]
+queries = [
+  [0, 3, 1, 2]
+]
+```
+
+### After Query
+```
+nums = [2, 4, 6, 8]
+```
+
+### Output
+```
+2 ^ 4 ^ 6 ^ 8 = 8
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+| Type              | Complexity |
+|------------------|-----------|
+| Time Complexity  | O(Q × (r-l)/k) |
+| Space Complexity | O(1) |
+
+Where:
+- `Q` = number of queries
+
+---
