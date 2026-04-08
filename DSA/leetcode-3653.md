@@ -1,4 +1,6 @@
 # 📌 XOR After Range Multiplication Queries I
+# 🔗 Problem Link
+https://leetcode.com/problems/xor-after-range-multiplication-queries-i/description/?envType=daily-question&envId=2026-04-08
 ## 🧠 Problem Description
 
 You are given:
