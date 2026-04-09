@@ -189,3 +189,31 @@ public:
 ```
 
 ---
+
+## ⏱️ Complexity Analysis
+
+| Type              | Complexity |
+|------------------|-----------|
+| Time Complexity  | O(n√n + Q√n) |
+| Space Complexity | O(n) |
+
+---
+
+## 🎯 Key Insights
+
+- Split queries based on step size
+- Use **modular inverse + prefix propagation**
+- Avoid repeated updates for small K
+
+---
+
+## ⚠️ Important Concepts
+
+- Modular exponentiation (Fast Power)
+- Modular inverse:
+```
+inverse(V) = V^(M-2) mod M
+```
+- Difference array with multiplication
+
+---
