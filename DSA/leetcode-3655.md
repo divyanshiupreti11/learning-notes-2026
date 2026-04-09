@@ -217,3 +217,10 @@ inverse(V) = V^(M-2) mod M
 - Difference array with multiplication
 
 ---
+## 🏷️ Tags
+
+- Arrays
+- Math
+- Modular Arithmetic
+- Square Root Decomposition
+- Optimization
