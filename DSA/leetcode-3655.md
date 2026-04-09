@@ -39,3 +39,65 @@ After processing all queries, return the **bitwise XOR** of all elements in the 
 - **Small K (K < √n)** → optimize using prefix technique  
 
 ---
+## 🔹 Step 1: Handle Large K
+
+For large step size:
+```
+for (i = L; i <= R; i += K)
+    nums[i] *= V
+```
+
+👉 Number of updates is small → efficient
+
+---
+
+## 🔹 Step 2: Group Small K Queries
+
+- Store queries based on same `K`
+- Process them together using a **difference array**
+
+---
+
+## 🔹 Step 3: Difference Array Trick
+
+Instead of updating each index:
+
+- Apply multiplication at start:
+```
+diff[L] *= V
+```
+
+- Apply inverse at end:
+```
+diff[next] *= inverse(V)
+```
+
+---
+
+## 🔹 Step 4: Prefix Propagation
+
+For same step `K`:
+```
+diff[i] *= diff[i-K]
+```
+
+👉 This spreads updates efficiently
+
+---
+
+## 🔹 Step 5: Apply Updates
+
+```
+nums[i] = nums[i] * diff[i]
+```
+
+---
+
+## 🔹 Step 6: Compute XOR
+
+```
+result = nums[0] ^ nums[1] ^ ... ^ nums[n-1]
+```
+
+---
+
