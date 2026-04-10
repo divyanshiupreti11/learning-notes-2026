@@ -128,3 +128,9 @@ distance = 2 × (k - i)
   - Index tracking
 
 ---
+## 🏷️ Tags
+
+- Arrays
+- Brute Force
+- Math
+- Optimization
