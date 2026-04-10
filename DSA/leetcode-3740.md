@@ -109,3 +109,22 @@ nums = [1, 2, 1, 1]
 | Space Complexity | O(1)      |
 
 ---
+## 🎯 Key Insight
+
+- Since `i < j < k`, the formula simplifies to:
+```
+distance = 2 × (k - i)
+```
+
+👉 Only the **first and last index matter**
+
+---
+
+## ⚠️ Limitations
+
+- Inefficient for large `n`
+- Needs optimization using:
+  - Hashing
+  - Index tracking
+
+---
