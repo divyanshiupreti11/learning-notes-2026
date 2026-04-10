@@ -78,3 +78,34 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+nums = [1, 2, 1, 1]
+```
+
+### Valid Triplet
+- Indices: (0, 2, 3)
+- Values: (1, 1, 1)
+
+### Distance
+```
+|0-2| + |2-3| + |3-0| = 2 + 1 + 3 = 6
+```
+
+### Output
+```
+6
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+| Type              | Complexity |
+|------------------|-----------|
+| Time Complexity  | O(n³)     |
+| Space Complexity | O(1)      |
+
+---
