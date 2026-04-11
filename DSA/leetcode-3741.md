@@ -101,3 +101,22 @@ public:
 ```
 
 ---
+## 📊 Example
+
+### Input
+```
+nums = [1, 2, 1, 1, 2, 1]
+```
+
+### Process
+- For value `1` → indices = [0, 2, 3, 5]
+- Triplets checked:
+  - (0,2,3) → distance = 2 × (3-0) = 6
+  - (2,3,5) → distance = 2 × (5-2) = 6
+
+### Output
+```
+6
+```
+
+---
