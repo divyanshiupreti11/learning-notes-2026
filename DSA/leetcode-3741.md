@@ -144,3 +144,10 @@ nums = [1, 2, 1, 1, 2, 1]
 - Large input → handled efficiently
 
 ---
+## 🏷️ Tags
+
+- Arrays
+- Hashing
+- Optimization
+- Sliding Window
+- Math
