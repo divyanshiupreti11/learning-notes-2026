@@ -1,4 +1,6 @@
-# Minimum Distance Between Three Equal Elements II
+# 📌 Minimum Distance Between Three Equal Elements II
+## 🔗 Problem Link
+https://leetcode.com/problems/minimum-distance-between-three-equal-elements-ii/description/?envType=daily-question&envId=2026-04-11
 ## 🧠 Problem Description
 
 You are given an integer array `nums`.
