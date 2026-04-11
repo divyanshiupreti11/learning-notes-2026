@@ -120,3 +120,27 @@ nums = [1, 2, 1, 1, 2, 1]
 ```
 
 ---
+## ⏱️ Complexity Analysis
+
+| Type              | Complexity |
+|------------------|-----------|
+| Time Complexity  | O(n)      |
+| Space Complexity | O(n)      |
+
+---
+
+## 🎯 Key Insights
+
+- No need for triple loops
+- Only consecutive triplets matter
+- Hashing + sliding window pattern
+
+---
+
+## ⚠️ Edge Cases
+
+- No triplet exists → return `-1`
+- All elements same → smallest window matters
+- Large input → handled efficiently
+
+---
