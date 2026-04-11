@@ -1,4 +1,4 @@
-
+# Minimum Distance Between Three Equal Elements II
 ## 🧠 Problem Description
 
 You are given an integer array `nums`.
