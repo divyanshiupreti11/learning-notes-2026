@@ -104,4 +104,18 @@ start = 3
 
 ---
 
+## 🎯 Key Insights
+
+- A simple linear scan is sufficient
+- Absolute difference ensures correct distance
+- No need for sorting or extra data structures
+
+---
+
+## ⚠️ Edge Cases
+
+- Target appears multiple times → choose closest
+- Target at `start` index → distance = 0
+- Large array → still efficient
+
 ---
