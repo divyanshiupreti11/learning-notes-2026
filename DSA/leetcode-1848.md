@@ -67,7 +67,11 @@ public:
             }
         }
 
-        return minDistance;## 📊 Example
+        return minDistance;
+    }
+};
+```
+## 📊 Example
 
 ### Input
 ```
@@ -99,8 +103,5 @@ start = 3
 | Space Complexity | O(1)      |
 
 ---
-    }
-};
-```
 
 ---
