@@ -51,3 +51,25 @@ distance = abs(i - start)
 - Return the minimum distance found
 
 ---
+## 💻 Implementation
+
+```cpp
+class Solution {
+public:
+    int getMinDistance(vector<int>& nums, int target, int start) {
+        int n = nums.size();
+
+        int minDistance = INT_MAX;
+
+        for (int i = 0; i < n; i++) {
+            if (nums[i] == target) {
+                minDistance = min(minDistance, abs(i - start));
+            }
+        }
+
+        return minDistance;
+    }
+};
+```
+
+---
