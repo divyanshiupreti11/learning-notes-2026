@@ -119,3 +119,8 @@ start = 3
 - Large array → still efficient
 
 ---
+## 🏷️ Tags
+
+- Arrays
+- Linear Search
+- Simulation
