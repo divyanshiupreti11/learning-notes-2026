@@ -67,7 +67,38 @@ public:
             }
         }
 
-        return minDistance;
+        return minDistance;## 📊 Example
+
+### Input
+```
+nums = [1, 2, 3, 4, 5]
+target = 5
+start = 3
+```
+
+### Valid Indices
+- Target found at index `4`
+
+### Distance
+```
+|4 - 3| = 1
+```
+
+### Output
+```
+1
+```
+
+---
+
+## ⏱️ Complexity Analysis
+
+| Type              | Complexity |
+|------------------|-----------|
+| Time Complexity  | O(n)      |
+| Space Complexity | O(1)      |
+
+---
     }
 };
 ```
