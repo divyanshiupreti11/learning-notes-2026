@@ -35,7 +35,7 @@ Mask = 111
 
 Steps:
 1. Handle the edge case when `n = 0`.
-2. Create a mask containing all `1`s with the same number of bits as `n`.
+2. Create a mask containing all `1`s with the same number of bits as `n`...
 3. XOR the mask with `n` to flip the bits.
 
 ---
